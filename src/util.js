@@ -140,7 +140,7 @@ export default {
        }).join('');
    },
    /**
-    * 属性取值，属性嵌套取值，为空且不存在安全取值方法
+    * 数据{}属性取值，属性嵌套取值，为空且不存在安全取值方法
     * @param {obj} obj           [要从取值的对象]
     * @param {string} props      [要从对象中取的属性名]
     * @param {*} defaultValue    [属性的默认值]

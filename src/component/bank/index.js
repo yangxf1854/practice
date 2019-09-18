@@ -16,12 +16,21 @@ const data = {
     }
   }
 };
+const objectList = [
+  {
+    name: '锅巴'
+  }
+]
 class Bank extends Component {
   constructor(props) {
     super(props);
     this.state = {
         value: ''
     };
+  }
+
+  componentDidMount() {
+    // console.log(safeData(objectList, 'name', ''), 'object-name');
   }
 
   cardChange = (eve) => {

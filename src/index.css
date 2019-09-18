@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -19,4 +20,29 @@ button.button-defaul {
 }
 .copy-table {
   position: relative;
+}
+.toast-container {
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  text-align: center;
+  background: #000;
+  opacity: .5;
+  color: #fff;
+  transition: opacity 2s;
+  -moz-transition: opacity 2s;	/* Firefox 4 */
+  -webkit-transition: opacity 2s;	/* Safari 和 Chrome */
+  -o-transition: opacity 2s;	/* Opera */
+}
+.toast-container-none {
+  opacity: 0;
+}
+
+a.arrow-alide {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 500
 }
