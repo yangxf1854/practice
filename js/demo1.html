@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>控制Div属性</title>
+    <style>
+        #outer{width:500px;margin:0 auto;padding:0;text-align:center;}
+        #div1{width:100px;height:100px;background:black;margin:10px auto;display:block;}
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <input type="button" value="变宽" onclick="widthChange('width')"/>
+        <input type="button" value="变高" onclick="widthChange('height')"/>
+        <input type="button" value="变色" onclick="widthChange('color')"/>
+        <input type="button" value="隐藏" onclick="widthChange('hidden')"/>
+        <input type="button" value="重置" onclick="widthChange('reset')"/>
+        <div id="div1"></div>
+    </div>
+    <script>
+        window.onload = function() {
+            var div1 = document.getElementById('div1');
+        }
+        // 宽度控制
+        function widthChange(type) {
+            switch(type) {
+                case 'width': 
+                  div1.style.width = '200px';
+                break;
+                case 'height':
+                  div1.style.height = '200px';
+                break;
+                case 'color':
+                  div1.style.background = 'red';
+                break;
+                case 'hidden':
+                  div1.style.display = 'none';
+                break;
+                case 'reset':
+                  div1.style.cssText = "";
+                break;
+                default:
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
