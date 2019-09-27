@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Bank from './component/bank';
 import Toast from './component/toast';
 import ArrowSlide from './component/arrow-slide';
+import Input from './component/input';
 import './index.css';
 import './fonts/iconfontnew.css';
 
@@ -10,6 +11,9 @@ import './fonts/iconfontnew.css';
 class App extends Component {
   constructor(props) {
     super(props);
+  }
+  handleChange = (e) => {
+    // console.log(e.target.value);
   }
 
   render() {
@@ -20,9 +24,16 @@ class App extends Component {
          msg="操作成功"
          time={2000}
         /> */}
-        <ArrowSlide itemLable itemsName='视力'>
+        {/* <ArrowSlide itemLable itemsName='视力'>
           <div>here is 视力内容</div>
-        </ArrowSlide>
+        </ArrowSlide> */}
+        <Input
+          placeholder="请输入"
+          onChange={this.handleChange}
+          prefix="前缀"
+          suffix="后缀"
+          allowClear
+        />
       </div>
     );
   }
