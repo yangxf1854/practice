@@ -11,6 +11,9 @@ import './fonts/iconfontnew.css';
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      
+    }
   }
   handleChange = (e) => {
     // console.log(e.target.value);
