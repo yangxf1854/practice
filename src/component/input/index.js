@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import * as PropTypes from 'prop-types';
-import './index.css';
+import './index.less';
 
 function fixControlledValue(value) {
   if (typeof value === 'undefined' || value === null) {
@@ -101,7 +101,7 @@ export default class Input extends Component {
     if (!allowClear || disabled || value === undefined || value === null || value === '') {
       return null;
     }
-    return <span onClick={this.handleReset} class="input-clear">关闭清除</span>;
+    return <span onClick={this.handleReset} className="input-clear">关闭清除</span>;
 
   }
 
@@ -109,7 +109,7 @@ export default class Input extends Component {
     const { suffix, allowClear } = this.props;
     if (suffix || allowClear) {
       return (
-        <span >
+        <span>
           {this.renderClearICon(prefixCls)}
           {suffix}
         </span>
@@ -131,6 +131,7 @@ export default class Input extends Component {
       <input
         type={type}
         placeholder={placeholder}
+        className="this-input"
         value={fixControlledValue(value)}
         onChange={this.handleChange}
         ref={this.saveInput}

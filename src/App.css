@@ -4430,7 +4430,7 @@ samp {
   -webkit-filter: blur(0.5px);
   filter: blur(0.5px);
   /* autoprefixer: off */
-  filter: progid\:DXImageTransform\.Microsoft\.Blur(PixelRadius\=1, MakeShadow\=false);
+  /* filter: progid\:DXImageTransform\.Microsoft\.Blur(PixelRadius\=1, MakeShadow\=false); */
   -webkit-transform: translateZ(0);
 }
 .ant-spin-blur:after {
