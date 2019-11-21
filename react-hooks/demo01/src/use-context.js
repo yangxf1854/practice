@@ -22,6 +22,17 @@ function Counter() {
     </div>
   )
 }
+// function Counter() {
+//   const [count, setCount] = useState(9);
+//   return (
+//     <>
+//       Count: {count}
+//       <button onClick={() => setCount(9)}>Reset</button>
+//       <button onClick={() => setCount(count - 1)}>-</button>
+//       <button onClick={() => setCount(count + 1)}>+</button>
+//     </>
+//   );
+// }
 
 // 孙子组件
 function ChildCounter() {

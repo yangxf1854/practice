@@ -27,7 +27,7 @@
 // react-hooks方法
 import React, { useState } from 'react';
 let flag = true;
-function Example() {
+function UseState() {
   const [count, setCount] = useState(0); // 数组解构,如果useState方法不传人值的话，count的值就是undefined
   
   // 等价
@@ -61,4 +61,4 @@ function Example() {
   )
 }
  
-export default Example;
+export default UseState;
